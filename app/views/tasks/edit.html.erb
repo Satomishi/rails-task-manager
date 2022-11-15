@@ -1,0 +1,11 @@
+<h1><%= @task.title %></h1>
+
+<%= form_with(model: @task) do |form| %>
+  <%= form.label(:title) %>
+  <%= form.text_field(:title) %>
+  <br>
+  <%= form.label(:details) %>
+  <%= form.text_field(:details) %>
+  <br>
+  <%= form.submit %>
+<% end %>
